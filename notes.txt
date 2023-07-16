@@ -1,0 +1,9 @@
+npm create vite@latest -- --template react client
+will create new client react app
+
+Downloading the dependencies
+npm install three @react-three/fiber @react-three/drei maath valtio react-color framer-motion
+
+Now we will use tailwind inside it
+https://tailwindcss.com/docs/guides/vite
+
