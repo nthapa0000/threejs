@@ -5,7 +5,7 @@ import Home from "./pages/Home"
 
 function App() {
   return (
-    <main className="app transition-all-ease-in">
+    <main className="app transition-all ease-in">
       {/* <h1 className="head-text">Three Js</h1> */}
       <Home/>
       <Canvas/> 
