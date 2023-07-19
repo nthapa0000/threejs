@@ -3,7 +3,7 @@ import {AnimatePresence,motion} from 'framer-motion';
 import {useSnapshot} from 'valtio';
 import config from '../config/config';
 import state from '../store';
-import { download, stylishShirt } from '../assets';
+import { download } from '../assets';
 import {downloadCanvasToImage,reader} from '../config/helpers'
 import {EditorTabs,FilterTabs,DecalTypes} from '../config/constants';
 import { fadeAnimation ,slideAnimation} from '../config/motion';
@@ -75,12 +75,15 @@ const Customizer = () => {
         default:
           state.isLogoTexture = true;
           state.isFullTexture = false;
+          break;
       }
       // it is just changing state we need to to also set setactive tab to update ui
 
       setActiveFilterTab((prevState)=>{
-        ...prevState,
-        [tabName]:!prevState[tabName]
+        return{
+          ...prevState,
+          [tabName]: !prevState[tabName]
+        }
       })
     }
   

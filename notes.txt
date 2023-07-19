@@ -7,3 +7,9 @@ npm install three @react-three/fiber @react-three/drei maath valtio react-color 
 Now we will use tailwind inside it
 https://tailwindcss.com/docs/guides/vite
 
+npm init -y on server to get package json file
+
+backend dependencies
+npm install cloudinary cors dotenv express mongoose nodemon openai
+    "start": "nodemon index", so to update backend continously
+    
